@@ -1,0 +1,102 @@
+// Internal action code for project customBB
+
+package myp;
+
+import edu.geog.geocog.csml.model.CSMLRegion;
+import edu.geog.geocog.csml.model.CSMLQualityDimension;
+import edu.geog.geocog.csml.model.CSMLDomain;
+import edu.geog.geocog.csml.model.CSMLModel;
+import edu.geog.geocog.csml.reasoner.CSMLConceptualSpaceReasoner;
+import edu.geog.geocog.csml.model.CSMLPoint;
+import edu.geog.geocog.csml.model.CSMLInstance;
+
+import jason.*;
+import jason.asSemantics.*;
+import jason.asSyntax.*;
+import jason.bb.*;
+
+import jason.stdlib.*;
+
+import java.util.*;
+import java.text.DecimalFormat;
+
+public class getObjectDistance extends DefaultInternalAction {
+
+    @Override
+    public Object execute(TransitionSystem ts, Unifier un, Term[] args) throws Exception {
+        // execute the internal action
+    	try {	
+    		// 1. gets the arguments as typed terms
+    	StringTerm p1x = (StringTerm)args[0];
+		String env = p1x.getString();
+		StringTerm p2x = (StringTerm)args[1];
+		String obj = p2x.getString();
+		StringTerm p3x = (StringTerm)args[2];
+		String wid = p3x.getString();
+		Double d2=0.0;
+		String msg = " ";
+		
+		Map<String, HashMap<String,String>> mteste2 = new HashMap<String, HashMap<String,String>>();
+        Map <String,String> quarto2 = new HashMap <String,String>();
+		
+		quarto2.put("QuadroPri","224-180-50");
+		mteste2.put("sala", (HashMap<String, String>) quarto2);
+		
+		if (env.equals("ND")){
+			d2 = 0.0;
+			
+		}else{
+			System.out.println("Entrei");
+		  for(Map.Entry<String,  HashMap<String,String>> entry_env:mteste2.entrySet()){
+                           
+            if (entry_env.getKey().equals(env)){
+                HashMap  <String,String> test = entry_env.getValue();
+                for ( Map.Entry<String, String> entry_h : test.entrySet()) {
+                      if (entry_h.getKey().equals(obj)){ 
+						 String value = entry_h.getValue(); 
+                         String dvalues = value;
+                         String [] dvaluesv = dvalues.split("-");
+                          Double p=  Double.parseDouble(dvaluesv[0]);
+                          Double d=  Double.parseDouble(dvaluesv[1]);
+                          Double w=  Double.parseDouble(dvaluesv[2]);
+						  Double widx =  Double.parseDouble(wid);
+                          Double f = (p*d)/w;
+                          d2 = ((w*f)/widx)/100; 
+						  
+						  DecimalFormat formato = new DecimalFormat("#.##");
+                          d2 = Double.valueOf(formato.format(d2));
+                          String distx = String.valueOf(d2);
+                          String [] parts = distx.split("\\.");
+						  
+              
+                         if (d2  >=1.0){
+                            msg = parts[0]+" metro e "+parts[1]+" centimetros";
+              
+                         }else{
+                            msg = parts[1]+" centimetros";
+                         }
+              
+						  
+						  
+                       }
+                  }  
+            }
+          }
+		}
+		
+		StringTerm result =  new StringTermImpl(msg);
+		//NumberTerm result = new NumberTermImpl(d2);
+
+    	return un.unifies(result,args[3]);
+    	} catch (ArrayIndexOutOfBoundsException e) {
+    		throw new JasonException("The internal action distance"+
+    		"has not received five arguments!");
+    	} catch (ClassCastException e) {
+    		throw new JasonException("The internal action distance"+
+    		"has received arguments that are not numbers!");
+    	} catch (Exception e) {
+    		throw new JasonException("Error in distance");
+    	}
+    	 	
+    }
+}

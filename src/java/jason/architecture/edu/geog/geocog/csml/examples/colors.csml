@@ -1,0 +1,4214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<csml:CSML xml:base="http://geocog.geog.ucsb.edu/csml/repository/colors.csml"
+           csml:base="http://geocog.geog.ucsb.edu/csml/repository/colors.csml#"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+					 xmlns:csml="http://geocog.geog.ucsb.edu/csml/csml-ns#">
+
+    <csml:Domain csml:ID="ColorHSV">
+				<csml:Label>Color</csml:Label>
+		    <csml:QualityDimension csml:ID="ColorHue" csml:circular="true">
+						<csml:Label>Hue</csml:Label>
+						<csml:Scale>interval</csml:Scale>
+						<csml:Range>
+				    		<csml:Min>0.0</csml:Min>
+								<csml:Max>360.0</csml:Max>
+						</csml:Range>
+						<csml:Units>degrees</csml:Units>
+				</csml:QualityDimension>
+				
+				<csml:QualityDimension csml:ID="ColorSaturation">
+						<csml:Label>Saturation</csml:Label>
+						<csml:Scale>ratio</csml:Scale>
+						<csml:Range>
+								<csml:Min>0.0</csml:Min>
+								<csml:Max>100.0</csml:Max>
+						</csml:Range>
+						<csml:Units>percent</csml:Units>
+				</csml:QualityDimension>
+				
+				<csml:QualityDimension csml:ID="ColorValue">
+						<csml:Label>Value</csml:Label>
+						<csml:Scale>ratio</csml:Scale>
+						<csml:Range>
+								<csml:Min>0.0</csml:Min>
+								<csml:Max>100.0</csml:Max>
+						</csml:Range>
+						<csml:Units>percent</csml:Units>
+				</csml:QualityDimension>
+		</csml:Domain>
+		
+		<!-- White Colors -->
+		<csml:Instance csml:ID="CosmicLatte">
+				<csml:Label>Cosmic Latte</csml:Label>
+				<csml:Point csml:ID="CosmicLatteColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 40.0 </cn>
+								<cn> 94 </cn>
+								<cn> 90 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Cream">
+				<csml:Label>Cream</csml:Label>
+				<csml:Point csml:ID="CreamColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 57.0 </cn>
+								<cn> 18 </cn>
+								<cn> 100 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Ivory">
+				<csml:Label>Ivory</csml:Label>
+				<csml:Point csml:ID="IvoryColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 60.0 </cn>
+								<cn> 6 </cn>
+								<cn> 100 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Magnolia">
+				<csml:Label>Magnolia</csml:Label>
+				<csml:Point csml:ID="MagnoliaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 247.0 </cn>
+								<cn> 94 </cn>
+								<cn> 92 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="OldLace">
+				<csml:Label>Old Lace</csml:Label>
+				<csml:Point csml:ID="OldLaceColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 57.0 </cn>
+								<cn> 18 </cn>
+								<cn> 100 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="White">
+				<csml:Label>White</csml:Label>
+				<csml:Point csml:ID="WhiteColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 0 </cn>
+								<cn> 100 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Pink colors -->
+		
+		<csml:Instance csml:ID="Amaranth">
+				<csml:Label>Amaranth</csml:Label>
+				<csml:Point csml:ID="AmaranthColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 345.0 </cn>
+								<cn> 78 </cn>
+								<cn> 64 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="AmaranthPink">
+				<csml:Label>Amaranth Pink</csml:Label>
+				<csml:Point csml:ID="AmaranthPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 345.0 </cn>
+								<cn> 47 </cn>
+								<cn> 92 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BrinkPink">
+				<csml:Label>Brink Pink</csml:Label>
+				<csml:Point csml:ID="BrinkPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 333.0 </cn>
+								<cn> 88 </cn>
+								<cn> 80 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CarminePink">
+				<csml:Label>Carmine Pink</csml:Label>
+				<csml:Point csml:ID="CarminePinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 75 </cn>
+								<cn> 80 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+				
+		<csml:Instance csml:ID="CarnationPink">
+				<csml:Label>Carnation Pink</csml:Label>
+				<csml:Point csml:ID="CarnationPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 100 </cn>
+								<cn> 80 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Cerise">
+				<csml:Label>Cerise</csml:Label>
+				<csml:Point csml:ID="CeriseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 343.0 </cn>
+								<cn> 78 </cn>
+								<cn> 87 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CherryBlossomPink">
+				<csml:Label>Cherry Blossom Pink</csml:Label>
+				<csml:Point csml:ID="CherryBlossomPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 350.0 </cn>
+								<cn> 100 </cn>
+								<cn> 84 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CoralPink">
+				<csml:Label>Coral Pink</csml:Label>
+				<csml:Point csml:ID="CoralPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 16.0 </cn>
+								<cn> 69 </cn>
+								<cn> 100 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DarkPink">
+				<csml:Label>Dark Pink</csml:Label>
+				<csml:Point csml:ID="DarkPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 342.0 </cn>
+								<cn> 64 </cn>
+								<cn> 91 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DeepCarminePink">
+				<csml:Label>Deep Carmine Pink</csml:Label>
+				<csml:Point csml:ID="DeepCarminePinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 10.0 </cn>
+								<cn> 80.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DeepPink">
+				<csml:Label>Deep Pink</csml:Label>
+				<csml:Point csml:ID="DeepPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 328.0 </cn>
+								<cn> 92.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="FrenchRose">
+				<csml:Label>French Rose</csml:Label>
+				<csml:Point csml:ID="FrenchRoseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 92.0 </cn>
+								<cn> 82.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Fuchsia">
+				<csml:Label>Fuchsia</csml:Label>
+				<csml:Point csml:ID="FuchsiaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 300.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="FuchsiaPink">
+				<csml:Label>Fuchsia Pink</csml:Label>
+				<csml:Point csml:ID="FuchsiaPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 300.0 </cn>
+								<cn> 47.0 </cn>
+								<cn> 84.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="HollywoodCerise">
+				<csml:Label>Hollywood Cerise</csml:Label>
+				<csml:Point csml:ID="HollywoodCeriseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 320.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 96.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="HotMagenta">
+				<csml:Label>Hot Magenta</csml:Label>
+				<csml:Point csml:ID="HotMagentaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 310.0 </cn>
+								<cn> 57.0 </cn>
+								<cn> 74.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="HotPink">
+				<csml:Label>Hot Pink</csml:Label>
+				<csml:Point csml:ID="HotPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 59.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="LavenderPink">
+				<csml:Label>Lavender Pink</csml:Label>
+				<csml:Point csml:ID="LavenderPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 332.0 </cn>
+								<cn> 31.0 </cn>
+								<cn> 98.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="LavenderRose">
+				<csml:Label>Lavender Rose</csml:Label>
+				<csml:Point csml:ID="LavenderRoseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 316.0 </cn>
+								<cn> 36.3 </cn>
+								<cn> 98.4 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="LightPink">
+				<csml:Label>Light Pink</csml:Label>
+				<csml:Point csml:ID="LightPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 351.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 86.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="LightThulianPink">
+				<csml:Label>Light Thulian Pink</csml:Label>
+				<csml:Point csml:ID="LightThulianPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 72.0 </cn>
+								<cn> 94.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Magenta">
+				<csml:Label>Magenta</csml:Label>
+				<csml:Point csml:ID="MagentaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 324.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 93.7 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MountbattenPink">
+				<csml:Label>Mountbatten Pink</csml:Label>
+				<csml:Point csml:ID="MountbattenPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 323.0 </cn>
+								<cn> 20.0 </cn>
+								<cn> 60.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PersianPink">
+				<csml:Label>Persian Pink</csml:Label>
+				<csml:Point csml:ID="PersianPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 72.0 </cn>
+								<cn> 77.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PersianRose">
+				<csml:Label>Persian Rose</csml:Label>
+				<csml:Point csml:ID="PersianRoseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 318.0 </cn>
+								<cn> 96.0 </cn>
+								<cn> 88.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PinkPrototype">
+				<csml:Label>Pink</csml:Label>
+				<csml:Point csml:ID="PinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 340.0 </cn>
+								<cn> 20.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Puce">
+				<csml:Label>Puce</csml:Label>
+				<csml:Point csml:ID="PuceColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 345.0 </cn>
+								<cn> 33.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Rose">
+				<csml:Label>Rose</csml:Label>
+				<csml:Point csml:ID="RoseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="RosePink">
+				<csml:Label>Rose Pink</csml:Label>
+				<csml:Point csml:ID="RosePinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 77.0 </cn>
+								<cn> 84.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SalmonPink">
+				<csml:Label>Salmon Pink</csml:Label>
+				<csml:Point csml:ID="SalmonPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 14.0 </cn>
+								<cn> 62.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="ShockingPink">
+				<csml:Label>Shocking Pink</csml:Label>
+				<csml:Point csml:ID="ShockingPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 315.0 </cn>
+								<cn> 94.0 </cn>
+								<cn> 99.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="TeaRose">
+				<csml:Label>Tea Rose</csml:Label>
+				<csml:Point csml:ID="TeaRoseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 337.0 </cn>
+								<cn> 47.0 </cn>
+								<cn> 93.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+				
+		<csml:Instance csml:ID="ThulianPink">
+				<csml:Label>Thulian Pink</csml:Label>
+				<csml:Point csml:ID="ThulianPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 82.0 </cn>
+								<cn> 92.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="UltraPink">
+				<csml:Label>Ultra Pink</csml:Label>
+				<csml:Point csml:ID="UltraPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 300.0 </cn>
+								<cn> 48.0 </cn>
+								<cn> 83.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PalePink">
+				<csml:Label>Pale Pink</csml:Label>
+				<csml:Point csml:ID="PalePinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 3.0 </cn>
+								<cn> 19.0 </cn>
+								<cn> 98.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BabyPink">
+				<csml:Label>Baby Pink</csml:Label>
+				<csml:Point csml:ID="BabyPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 21.0 </cn>
+								<cn> 96.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PastelPink">
+				<csml:Label>Pastel Pink</csml:Label>
+				<csml:Point csml:ID="PastelPinkColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 1.0 </cn>
+								<cn> 26.0 </cn>
+								<cn> 87.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Red colors -->
+		
+		<csml:Instance csml:ID="AlizarinCrimson">
+				<csml:Label>Alizarin Crimson</csml:Label>
+				<csml:Point csml:ID="AlizarinCrimsonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 355.0 </cn>
+								<cn> 83.0 </cn>
+								<cn> 89.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Amaranth -->
+		
+		<csml:Instance csml:ID="Burgundy">
+				<csml:Label>Burgundy</csml:Label>
+				<csml:Point csml:ID="BurgundyColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 345.0 </cn>
+								<cn> 50.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Cardinal">
+				<csml:Label>Cardinal</csml:Label>
+				<csml:Point csml:ID="CardinalColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 350.0 </cn>
+								<cn> 85.0 </cn>
+								<cn> 77.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Carmine">
+				<csml:Label>Carmine</csml:Label>
+				<csml:Point csml:ID="CarmineColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 350.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 59.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Carnelian">
+				<csml:Label>Carnelian</csml:Label>
+				<csml:Point csml:ID="CarnelianColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 85.0 </cn>
+								<cn> 70.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Cerise -->
+		
+		<csml:Instance csml:ID="Chestnut">
+				<csml:Label>Chestnut</csml:Label>
+				<csml:Point csml:ID="ChestnutColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 55.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CoralRed">
+				<csml:Label>Coral Red</csml:Label>
+				<csml:Point csml:ID="CoralRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 3.0 </cn>
+								<cn> 82.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Crimson">
+				<csml:Label>Crimson</csml:Label>
+				<csml:Point csml:ID="CrimsonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 348.0 </cn>
+								<cn> 91.0 </cn>
+								<cn> 86.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Dark Pink -->
+		
+		<csml:Instance csml:ID="FaluRed">
+				<csml:Label>Falu Red</csml:Label>
+				<csml:Point csml:ID="FaluRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 81.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="FireEngineRed">
+				<csml:Label>Fire Engine Red</csml:Label>
+				<csml:Point csml:ID="FireEngineRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 92.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Fuchsia -->
+		<!-- incl. Magenta -->
+		
+		<csml:Instance csml:ID="Maroon">
+				<csml:Label>Maroon</csml:Label>
+				<csml:Point csml:ID="MaroonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="OrangeRed">
+				<csml:Label>Orange-Red</csml:Label>
+				<csml:Point csml:ID="OrangeRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 15.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PersianRed">
+				<csml:Label>Persian Red</csml:Label>
+				<csml:Point csml:ID="PersianRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 5.0 </cn>
+								<cn> 50.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. PinkPrototype -->
+			
+		<csml:Instance csml:ID="Persimmon">
+				<csml:Label>Persimmon</csml:Label>
+				<csml:Point csml:ID="PersimmonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 10.0 </cn>
+								<cn> 85.0 </cn>
+								<cn> 94.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="RedPrototype">
+				<csml:Label>Red</csml:Label>
+				<csml:Point csml:ID="RedPrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="RedViolet">
+				<csml:Label>Red-Violet</csml:Label>
+				<csml:Point csml:ID="RedVioletColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 322.0 </cn>
+								<cn> 89.0 </cn>
+								<cn> 78.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Rose -->
+		
+		<csml:Instance csml:ID="RoseMadder">
+				<csml:Label>Rose Madder</csml:Label>
+				<csml:Point csml:ID="RoseMadderColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 348.0 </cn>
+								<cn> 90.0 </cn>
+								<cn> 77.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Ruby">
+				<csml:Label>Ruby</csml:Label>
+				<csml:Point csml:ID="RubyColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 338.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 40.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Rust">
+				<csml:Label>Rust</csml:Label>
+				<csml:Point csml:ID="RustColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 18.0 </cn>
+								<cn> 92.0 </cn>
+								<cn> 72.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<!-- incl. Puce -->
+				
+		<csml:Instance csml:ID="Sangria">
+				<csml:Label>Sangria</csml:Label>
+				<csml:Point csml:ID="SangriaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 356.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 57.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Scarlet">
+				<csml:Label>Scarlet</csml:Label>
+				<csml:Point csml:ID="ScarletColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 8.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>			
+				
+		<csml:Instance csml:ID="TorchRed">
+				<csml:Label>Torch Red</csml:Label>
+				<csml:Point csml:ID="TorchRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 8.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 92.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="FireBrick">
+				<csml:Label>Fire Brick</csml:Label>
+				<csml:Point csml:ID="FireBrickColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 74.0 </cn>
+								<cn> 42.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Terracotta">
+				<csml:Label>Terracotta</csml:Label>
+				<csml:Point csml:ID="TerracottaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 8.0 </cn>
+								<cn> 70.6 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="UpsdellRed">
+				<csml:Label>Upsdell Red</csml:Label>
+				<csml:Point csml:ID="UpsdellColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 356.0 </cn>
+								<cn> 82.0 </cn>
+								<cn> 68.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="VenetianRed">
+				<csml:Label>Venetian Red</csml:Label>
+				<csml:Point csml:ID="VenetianRedColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 84.0 </cn>
+								<cn> 84.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Vermilion">
+				<csml:Label>Vermilion</csml:Label>
+				<csml:Point csml:ID="VermilionColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 5.0 </cn>
+								<cn> 77.0 </cn>
+								<cn> 89.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Orange colors -->
+		
+		<csml:Instance csml:ID="Amber">
+				<csml:Label>Amber</csml:Label>
+				<csml:Point csml:ID="AmberColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 45.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Apricot">
+				<csml:Label>Apricot</csml:Label>
+				<csml:Point csml:ID="ApricotColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 24.0 </cn>
+								<cn> 87.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="CarrotOrange">
+				<csml:Label>Carrot Orange</csml:Label>
+				<csml:Point csml:ID="CarrotOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 33.0 </cn>
+								<cn> 86.0 </cn>
+								<cn> 93.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Champagne">
+				<csml:Label>Champagne</csml:Label>
+				<csml:Point csml:ID="ChampagneColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 37.0 </cn>
+								<cn> 17.0 </cn>
+								<cn> 97.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Coral">
+				<csml:Label>Coral</csml:Label>
+				<csml:Point csml:ID="CoralColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 16.0 </cn>
+								<cn> 69.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="BrownPrototype">
+				<csml:Label>Brown</csml:Label>
+				<csml:Point csml:ID="BrownPrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 59.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="BurntOrange">
+				<csml:Label>BurntOrange</csml:Label>
+				<csml:Point csml:ID="BurntOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 25.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="DarkSalmon">
+				<csml:Label>Dark Salmon</csml:Label>
+				<csml:Point csml:ID="DarkSalmonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 15.0 </cn>
+								<cn> 48.0 </cn>
+								<cn> 91.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Gamboge">
+				<csml:Label>Gamboge</csml:Label>
+				<csml:Point csml:ID="GambogeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 38.0 </cn>
+								<cn> 94.0 </cn>
+								<cn> 94.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="InternationalOrange">
+				<csml:Label>International Orange</csml:Label>
+				<csml:Point csml:ID="InternationalOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 19.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="Mahogany">
+				<csml:Label>Mahogany</csml:Label>
+				<csml:Point csml:ID="MahoganyColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 20.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 75.3 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>		
+		
+		<csml:Instance csml:ID="OrangePrototype">
+				<csml:Label>Orange</csml:Label>
+				<csml:Point csml:ID="OrangePrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="OrangeWeb">
+				<csml:Label>Orange (web)</csml:Label>
+				<csml:Point csml:ID="OrangeWebColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 39.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Orange-Red -->
+		
+		<csml:Instance csml:ID="OrangePeel">
+				<csml:Label>Orange Peel</csml:Label>
+				<csml:Point csml:ID="OrangePeelColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 38.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Peach">
+				<csml:Label>Peach</csml:Label>
+				<csml:Point csml:ID="PeachColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 40.0 </cn>
+								<cn> 29.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PeachOrange">
+				<csml:Label>Peach-Orange</csml:Label>
+				<csml:Point csml:ID="PeachOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 40.0 </cn>
+								<cn> 37.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PeachYellow">
+				<csml:Label>Peach-Yellow</csml:Label>
+				<csml:Point csml:ID="PeachYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 40.0 </cn>
+								<cn> 26.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Persimmon -->
+		
+		<csml:Instance csml:ID="PinkOrange">
+				<csml:Label>Pink-Orange</csml:Label>
+				<csml:Point csml:ID="PinkOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 20.0 </cn>
+								<cn> 60.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PortlandOrange">
+				<csml:Label>Portland Orange</csml:Label>
+				<csml:Point csml:ID="PortlandOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 11.0 </cn>
+								<cn> 78.8 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Pumpkin">
+				<csml:Label>Pumpkin</csml:Label>
+				<csml:Point csml:ID="PumpkinColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 24.0 </cn>
+								<cn> 90.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Rust -->
+			
+		<csml:Instance csml:ID="SafetyOrange">
+				<csml:Label>Safety Orange</csml:Label>
+				<csml:Point csml:ID="SafetyOrangeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 24.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Salmon">
+				<csml:Label>Salmon</csml:Label>
+				<csml:Point csml:ID="SalmonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 14.0 </cn>
+								<cn> 52.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Tangerine">
+				<csml:Label>Tangerine</csml:Label>
+				<csml:Point csml:ID="TangerineColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 33.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 95.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Tenne">
+				<csml:Label>Tenne</csml:Label>
+				<csml:Point csml:ID="TenneColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 25.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 80.4 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Tomato">
+				<csml:Label>Tomato</csml:Label>
+				<csml:Point csml:ID="TomatoColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 15.0 </cn>
+								<cn> 75.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Vermilion -->
+		
+		<!-- Brown colors -->
+		
+		<csml:Instance csml:ID="Auburn">
+				<csml:Label>Auburn</csml:Label>
+				<csml:Point csml:ID="AuburnColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 20.0 </cn>
+								<cn> 76.1 </cn>
+								<cn> 42.7 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Beige">
+				<csml:Label>Beige</csml:Label>
+				<csml:Point csml:ID="BeigeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 60.0 </cn>
+								<cn> 10.0 </cn>
+								<cn> 96.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Bistre">
+				<csml:Label>Bistre</csml:Label>
+				<csml:Point csml:ID="BistreColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 24.0 </cn>
+								<cn> 49.0 </cn>
+								<cn> 24.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Bole">
+				<csml:Label>Bole</csml:Label>
+				<csml:Point csml:ID="BoleColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 24.0 </cn>
+								<cn> 34.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Bronze">
+				<csml:Label>Bronze</csml:Label>
+				<csml:Point csml:ID="BronzeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 75.6 </cn>
+								<cn> 80.4 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Buff">
+				<csml:Label>Buff</csml:Label>
+				<csml:Point csml:ID="BuffColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 49.0 </cn>
+								<cn> 46.0 </cn>
+								<cn> 94.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="RawUmber">
+				<csml:Label>Raw Umber</csml:Label>
+				<csml:Point csml:ID="RawUmberColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 34.0 </cn>
+								<cn> 84.0 </cn>
+								<cn> 45.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BurntSienna">
+				<csml:Label>Burnt Sienna</csml:Label>
+				<csml:Point csml:ID="BurntSiennaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 14.0 </cn>
+								<cn> 65.0 </cn>
+								<cn> 91.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BurntUmber">
+				<csml:Label>Burnt Umber</csml:Label>
+				<csml:Point csml:ID="BurntUmberColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 9.0 </cn>
+								<cn> 74.0 </cn>
+								<cn> 54.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Chocolate">
+				<csml:Label>Chocolate</csml:Label>
+				<csml:Point csml:ID="ChocolateColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 31.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 48.2 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. BrownPrototype -->
+		
+		<csml:Instance csml:ID="Copper">
+				<csml:Label>Copper</csml:Label>
+				<csml:Point csml:ID="CopperColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 29.0 </cn>
+								<cn> 72.0 </cn>
+								<cn> 72.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Cordovan">
+				<csml:Label>Cordovan</csml:Label>
+				<csml:Point csml:ID="CordovanColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 337.0 </cn>
+								<cn> 89.0 </cn>
+								<cn> 94.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DesertSand">
+				<csml:Label>Desert Sand</csml:Label>
+				<csml:Point csml:ID="DesertSandColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 25.0 </cn>
+								<cn> 26.0 </cn>
+								<cn> 93.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Ecru">
+				<csml:Label>Ecru</csml:Label>
+				<csml:Point csml:ID="EcruColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 39.0 </cn>
+								<cn> 27.0 </cn>
+								<cn> 77.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Fallow">
+				<csml:Label>Fallow</csml:Label>
+				<csml:Point csml:ID="FallowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 45.0 </cn>
+								<cn> 17.0 </cn>
+								<cn> 23.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Khaki">
+				<csml:Label>Khaki</csml:Label>
+				<csml:Point csml:ID="KhakiColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 37.0 </cn>
+								<cn> 26.0 </cn>
+								<cn> 76.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Liver">
+				<csml:Label>Liver</csml:Label>
+				<csml:Point csml:ID="LiverColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 9.6 </cn>
+								<cn> 32.5 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Mahogany -->
+		
+		<csml:Instance csml:ID="Ochre">
+				<csml:Label>Ochre</csml:Label>
+				<csml:Point csml:ID="OchreColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 83.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Wheat">
+				<csml:Label>Wheat</csml:Label>
+				<csml:Point csml:ID="WheatColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 39.0 </cn>
+								<cn> 26.0 </cn>
+								<cn> 96.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Russet">
+				<csml:Label>Russet</csml:Label>
+				<csml:Point csml:ID="RussetColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 25.0 </cn>
+								<cn> 78.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Rust -->
+		
+		<csml:Instance csml:ID="SandyBrown">
+				<csml:Label>Sandy Brown</csml:Label>
+				<csml:Point csml:ID="SandyBrownColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 28.0 </cn>
+								<cn> 61.0 </cn>
+								<cn> 96.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SealBrown">
+				<csml:Label>Seal Brown</csml:Label>
+				<csml:Point csml:ID="SealBrownColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 60.0 </cn>
+								<cn> 20.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Sepia">
+				<csml:Label>Sepia</csml:Label>
+				<csml:Point csml:ID="SepiaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 82.0 </cn>
+								<cn> 44.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Sienna">
+				<csml:Label>Sienna</csml:Label>
+				<csml:Point csml:ID="SiennaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 19.0 </cn>
+								<cn> 71.9 </cn>
+								<cn> 62.7 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Tan">
+				<csml:Label>Tan</csml:Label>
+				<csml:Point csml:ID="TanColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 34.0 </cn>
+								<cn> 33.0 </cn>
+								<cn> 82.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Taupe">
+				<csml:Label>Taupe</csml:Label>
+				<csml:Point csml:ID="TaupeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 27.0 </cn>
+								<cn> 30.6 </cn>
+								<cn> 28.2 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Yellow colors -->
+		
+		<!-- incl. Amber -->
+		<!-- incl. Apricot -->
+		<!-- incl. Beige -->
+		<!-- incl. Buff -->		
+		
+		<csml:Instance csml:ID="ChartreuseYellow">
+				<csml:Label>Chartreuse Yellow</csml:Label>
+				<csml:Point csml:ID="ChartreuseYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 68.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Cream -->
+		
+		<csml:Instance csml:ID="DarkGoldenrod">
+				<csml:Label>Dark Goldenrod</csml:Label>
+				<csml:Point csml:ID="DarkGoldenrodColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 43.0 </cn>
+								<cn> 94.0 </cn>
+								<cn> 72.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Ecru -->
+		
+		<csml:Instance csml:ID="Flax">
+				<csml:Label>Flax</csml:Label>
+				<csml:Point csml:ID="FlaxColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 50.0 </cn>
+								<cn> 45.0 </cn>
+								<cn> 93.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Gamboge -->	
+		
+		<csml:Instance csml:ID="Golden">
+				<csml:Label>Golden</csml:Label>
+				<csml:Point csml:ID="GoldenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 51.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Goldenrod">
+				<csml:Label>Goldenrod</csml:Label>
+				<csml:Point csml:ID="GoldenrodColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 43.0 </cn>
+								<cn> 85.0 </cn>
+								<cn> 85.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="GoldenPoppy">
+				<csml:Label>Golden Poppy</csml:Label>
+				<csml:Point csml:ID="GoldenPoppyColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 48.0 </cn>
+								<cn> 98.0 </cn>
+								<cn> 97.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="GoldenYellow">
+				<csml:Label>Golden Yellow</csml:Label>
+				<csml:Point csml:ID="GoldenYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 52.5 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="GreenYellow">
+				<csml:Label>Green-Yellow</csml:Label>
+				<csml:Point csml:ID="GreenYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 84.0 </cn>
+								<cn> 82.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Khaki -->
+				
+		<csml:Instance csml:ID="Lemon">
+				<csml:Label>Lemon</csml:Label>
+				<csml:Point csml:ID="LemonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 55.0 </cn>
+								<cn> 94.0 </cn>
+								<cn> 99.0 </cn>
+						</csml:PointValues>
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+
+		<csml:Instance csml:ID="LemonChiffon">
+				<csml:Label>Lemon Chiffon</csml:Label>
+				<csml:Point csml:ID="LemonChiffonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 54.0 </cn>
+								<cn> 19.6 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Lime">
+				<csml:Label>Lime</csml:Label>
+				<csml:Point csml:ID="LimeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 75.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Maize">
+				<csml:Label>Maize</csml:Label>
+				<csml:Point csml:ID="MaizeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 54.0 </cn>
+								<cn> 62.9 </cn>
+								<cn> 98.4 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MetallicGold">
+				<csml:Label>Metallic Gold</csml:Label>
+				<csml:Point csml:ID="MetallicGoldColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 46.0 </cn>
+								<cn> 74.0 </cn>
+								<cn> 83.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Mustard">
+				<csml:Label>Mustard</csml:Label>
+				<csml:Point csml:ID="MustardColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 47.0 </cn>
+								<cn> 65.5 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="NavajoWhite">
+				<csml:Label>Navajo White</csml:Label>
+				<csml:Point csml:ID="NavajoWhiteColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 36.0 </cn>
+								<cn> 32.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="OldGold">
+				<csml:Label>Old Gold</csml:Label>
+				<csml:Point csml:ID="OldGoldColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 49.0 </cn>
+								<cn> 71.0 </cn>
+								<cn> 81.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Olive">
+				<csml:Label>Olive</csml:Label>
+				<csml:Point csml:ID="OliveColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 60.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PapayaWhip">
+				<csml:Label>Papaya Whip</csml:Label>
+				<csml:Point csml:ID="PapayaWhipColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 40.0 </cn>
+								<cn> 97.0 </cn>
+								<cn> 97.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl PeachYellow -->
+		
+		<csml:Instance csml:ID="Pear">
+				<csml:Label>Pear</csml:Label>
+				<csml:Point csml:ID="PearColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 66.0 </cn>
+								<cn> 78.0 </cn>
+								<cn> 88.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Saffron">
+				<csml:Label>Saffron</csml:Label>
+				<csml:Point csml:ID="SaffronColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 45.0 </cn>
+								<cn> 80.0 </cn>
+								<cn> 96.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SchoolBusYellow">
+				<csml:Label>School Bus Yellow</csml:Label>
+				<csml:Point csml:ID="SchoolBusYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 36.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SelectiveYellow">
+				<csml:Label>Selective Yellow</csml:Label>
+				<csml:Point csml:ID="SelectiveYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 44.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="TangerineYellow">
+				<csml:Label>Tangerine Yellow</csml:Label>
+				<csml:Point csml:ID="TangerineYellowColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 48.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="YellowPrototype">
+				<csml:Label>Yellow</csml:Label>
+				<csml:Point csml:ID="YellowPrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 60.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+
+		<!-- Gray colors -->
+				
+		<csml:Instance csml:ID="Gray">
+				<csml:Label>Gray (alt. Grey)</csml:Label>
+				<csml:Point csml:ID="GrayColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 0.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Arsenic">
+				<csml:Label>Arsenic</csml:Label>
+				<csml:Point csml:ID="ArsenicColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 230.0 </cn>
+								<cn> 6.0 </cn>
+								<cn> 7.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Bistre -->
+		
+		<csml:Instance csml:ID="BlackPrototype">
+				<csml:Label>Black</csml:Label>
+				<csml:Point csml:ID="BlackPrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 0.0 </cn>
+								<cn> 0.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Charcoal">
+				<csml:Label>Charcoal</csml:Label>
+				<csml:Point csml:ID="CharcoalColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 204.0 </cn>
+								<cn> 31.0 </cn>
+								<cn> 31.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DavysGrey">
+				<csml:Label>Davy's Grey</csml:Label>
+				<csml:Point csml:ID="DavysGreyColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 0.0 </cn>
+								<cn> 33.3 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Feldgrau">
+				<csml:Label>Feldgrau</csml:Label>
+				<csml:Point csml:ID="FeldgrauColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 142.0 </cn>
+								<cn> 17.0 </cn>
+								<cn> 36.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Liver -->
+		
+		<csml:Instance csml:ID="PaynesGrey">
+				<csml:Label>Payne's Grey</csml:Label>
+				<csml:Point csml:ID="PaynesGreyColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 11.0 </cn>
+								<cn> 28.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Seal Brown -->
+		
+		<csml:Instance csml:ID="Silver">
+				<csml:Label>Silver</csml:Label>
+				<csml:Point csml:ID="SilverColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 0.0 </cn>
+								<cn> 0.0 </cn>
+								<cn> 75.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SlateGray">
+				<csml:Label>Slate Gray</csml:Label>
+				<csml:Point csml:ID="SlateGrayColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 210.0 </cn>
+								<cn> 22.0 </cn>
+								<cn> 56.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Taupe -->
+		
+		<csml:Instance csml:ID="PurpleTaupe">
+				<csml:Label>Purple Taupe</csml:Label>
+				<csml:Point csml:ID="PurpleTaupeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 285.0 </cn>
+								<cn> 19.0 </cn>
+								<cn> 33.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MediumTaupe">
+				<csml:Label>Medium Taupe</csml:Label>
+				<csml:Point csml:ID="MediumTaupeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 9.0 </cn>
+								<cn> 31.0 </cn>
+								<cn> 40.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>	
+		
+		<csml:Instance csml:ID="TaupeGray">
+				<csml:Label>Taupe Gray</csml:Label>
+				<csml:Point csml:ID="TaupeGrayColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 30.0 </cn>
+								<cn> 1.0 </cn>
+								<cn> 60.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PaleTaupe">
+				<csml:Label>Pale Taupe</csml:Label>
+				<csml:Point csml:ID="PaleTaupeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 25.0 </cn>
+								<cn> 33.0 </cn>
+								<cn> 74.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="RoseQuartz">
+				<csml:Label>Rose Quartz</csml:Label>
+				<csml:Point csml:ID="RoseQuartzColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 330.0 </cn>
+								<cn> 12.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. White -->
+		
+		<csml:Instance csml:ID="Xanadu">
+				<csml:Label>Xanadu</csml:Label>
+				<csml:Point csml:ID="XanaduColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 136.0 </cn>
+								<cn> 14.0 </cn>
+								<cn> 52.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Green colors -->
+		
+		<csml:Instance csml:ID="ArmyGreen">
+				<csml:Label>Army Green</csml:Label>
+				<csml:Point csml:ID="ArmyGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 69.0 </cn>
+								<cn> 61.0 </cn>
+								<cn> 33.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Asparagus">
+				<csml:Label>Asparagus</csml:Label>
+				<csml:Point csml:ID="AsparagusColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 92.0 </cn>
+								<cn> 43.0 </cn>
+								<cn> 63.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BrightGreen">
+				<csml:Label>Bright Green</csml:Label>
+				<csml:Point csml:ID="BrightGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 96.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BritishRacingGreen">
+				<csml:Label>British Racing Green</csml:Label>
+				<csml:Point csml:ID="BritishRacingGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 153.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 27.5 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CamouflageGreen">
+				<csml:Label>Camouflage Green</csml:Label>
+				<csml:Point csml:ID="CamouflageGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 91.0 </cn>
+								<cn> 20.0 </cn>
+								<cn> 53.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Celadon">
+				<csml:Label>Celadon</csml:Label>
+				<csml:Point csml:ID="CeladonColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 123.0 </cn>
+								<cn> 24.0 </cn>
+								<cn> 88.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="ChartreuseWeb">
+				<csml:Label>Chartreuse (Web color)</csml:Label>
+				<csml:Point csml:ID="ChartreuseWebColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 90.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="YellowGreen">
+				<csml:Label>Yellow-Green</csml:Label>
+				<csml:Point csml:ID="YellowGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 90.0 </cn>
+								<cn> 60.0 </cn>
+								<cn> 54.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Emerald">
+				<csml:Label>Emerald</csml:Label>
+				<csml:Point csml:ID="EmeraldColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 140.0 </cn>
+								<cn> 60.0 </cn>
+								<cn> 78.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="FernGreen">
+				<csml:Label>Fern Green</csml:Label>
+				<csml:Point csml:ID="FernGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 106.0 </cn>
+								<cn> 45.0 </cn>
+								<cn> 47.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="ForestGreen">
+				<csml:Label>Forest Green</csml:Label>
+				<csml:Point csml:ID="ForestGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 76.0 </cn>
+								<cn> 55.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="GrayAsparagus">
+				<csml:Label>Gray-Asparagus</csml:Label>
+				<csml:Point csml:ID="GrayAsparagusColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 117.0 </cn>
+								<cn> 22.0 </cn>
+								<cn> 35.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="GreenPrototype">
+				<csml:Label>Green</csml:Label>
+				<csml:Point csml:ID="GreenPrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="GreenX11">
+				<csml:Label>Green (X11)</csml:Label>
+				<csml:Point csml:ID="GreenX11ColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Green-Yellow -->
+		
+		<csml:Instance csml:ID="Harlequin">
+				<csml:Label>Harlequin</csml:Label>
+				<csml:Point csml:ID="HarlequinColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 105.0 </cn>
+								<cn> 97.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="HunterGreen">
+				<csml:Label>Hunter Green</csml:Label>
+				<csml:Point csml:ID="HunterGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 45.0 </cn>
+								<cn> 45.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="IslamicGreen">
+				<csml:Label>Islamic Green</csml:Label>
+				<csml:Point csml:ID="IslamicGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 60.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Jade">
+				<csml:Label>Jade</csml:Label>
+				<csml:Point csml:ID="JadeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="JungleGreen">
+				<csml:Label>Jungle Green</csml:Label>
+				<csml:Point csml:ID="JungleGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 80.0 </cn>
+								<cn> 70.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="KellyGreen">
+				<csml:Label>Kelly Green</csml:Label>
+				<csml:Point csml:ID="KellyGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 48.0 </cn>
+								<cn> 48.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Lime -->
+		
+		<csml:Instance csml:ID="LimeGreen">
+				<csml:Label>Lime Green</csml:Label>
+				<csml:Point csml:ID="LimeGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 75.6 </cn>
+								<cn> 80.4 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+
+		<csml:Instance csml:ID="MidnightGreen">
+				<csml:Label>Midnight Green</csml:Label>
+				<csml:Point csml:ID="MidnightGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 187.2 </cn>
+								<cn> 100.0 </cn>
+								<cn> 32.5 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MossGreen">
+				<csml:Label>Moss Green</csml:Label>
+				<csml:Point csml:ID="MossGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 135.0 </cn>
+								<cn> 20.0 </cn>
+								<cn> 87.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Myrtle">
+				<csml:Label>Myrtle</csml:Label>
+				<csml:Point csml:ID="MyrtleColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 87.1 </cn>
+								<cn> 74.1 </cn>
+								<cn> 88.2 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="OfficeGreen">
+				<csml:Label>Office Green</csml:Label>
+				<csml:Point csml:ID="OfficeGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Olive -->
+		
+		<csml:Instance csml:ID="OliveDrab">
+				<csml:Label>Olive Drab</csml:Label>
+				<csml:Point csml:ID="OliveDrabColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 80.0 </cn>
+								<cn> 75.0 </cn>
+								<cn> 56.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Pear -->
+		
+		<csml:Instance csml:ID="PersianGreen">
+				<csml:Label>Persian Green</csml:Label>
+				<csml:Point csml:ID="PersianGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 135.0 </cn>
+								<cn> 75.0 </cn>
+								<cn> 60.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PigmentGreen">
+				<csml:Label>Pigment Green</csml:Label>
+				<csml:Point csml:ID="PigmentGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 125.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 65.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PineGreen">
+				<csml:Label>Pine Green</csml:Label>
+				<csml:Point csml:ID="PineGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 175.0 </cn>
+								<cn> 99.0 </cn>
+								<cn> 47.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SeaGreen">
+				<csml:Label>Sea Green</csml:Label>
+				<csml:Point csml:ID="SeaGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 146.0 </cn>
+								<cn> 67.0 </cn>
+								<cn> 55.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="ShamrockGreen">
+				<csml:Label>Shamrock Green</csml:Label>
+				<csml:Point csml:ID="ShamrockGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 120.0 </cn>
+								<cn> 90.0 </cn>
+								<cn> 75.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SpringGreen">
+				<csml:Label>Spring Green</csml:Label>
+				<csml:Point csml:ID="SpringGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 150.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SpringBud">
+				<csml:Label>Spring Bud</csml:Label>
+				<csml:Point csml:ID="SpringBudColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 88.0 </cn>
+								<cn> 90.0 </cn>
+								<cn> 63.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="TeaGreen">
+				<csml:Label>Tea Green</csml:Label>
+				<csml:Point csml:ID="TeaGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 100.0 </cn>
+								<cn> 19.0 </cn>
+								<cn> 94.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Teal">
+				<csml:Label>Teal</csml:Label>
+				<csml:Point csml:ID="TealColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 180.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Viridian">
+				<csml:Label>Viridian</csml:Label>
+				<csml:Point csml:ID="ViridianColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 161.0 </cn>
+								<cn> 51.0 </cn>
+								<cn> 51.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="IndiaGreen">
+				<csml:Label>India Green</csml:Label>
+				<csml:Point csml:ID="IndiaGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 115.0 </cn>
+								<cn> 94.0 </cn>
+								<cn> 53.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SapGreen">
+				<csml:Label>Sap Green</csml:Label>
+				<csml:Point csml:ID="SapGreenColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 93.0 </cn>
+								<cn> 66.0 </cn>
+								<cn> 49.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Cyan colors -->
+		
+		<csml:Instance csml:ID="AliceBlue">
+				<csml:Label>Alice Blue</csml:Label>
+				<csml:Point csml:ID="AliceBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 208.0 </cn>
+								<cn> 6.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Aqua">
+				<csml:Label>Aqua</csml:Label>
+				<csml:Point csml:ID="AquaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 180.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Aquamarine">
+				<csml:Label>Aquamarine</csml:Label>
+				<csml:Point csml:ID="AquamarineColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 160.0 </cn>
+								<cn> 50.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BabyBlue">
+				<csml:Label>Baby Blue</csml:Label>
+				<csml:Point csml:ID="BabyBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 180.0 </cn>
+								<cn> 97.0 </cn>
+								<cn> 97.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BondiBlue">
+				<csml:Label>Bondi Blue</csml:Label>
+				<csml:Point csml:ID="BondiBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 191.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 71.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Cerulean">
+				<csml:Label>Cerulean</csml:Label>
+				<csml:Point csml:ID="CeruleanColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 196.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 65.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Cyan">
+				<csml:Label>Cyan</csml:Label>
+				<csml:Point csml:ID="CyanColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 193.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 92.2 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="ElectricBlue">
+				<csml:Label>Electric Blue</csml:Label>
+				<csml:Point csml:ID="ElectricBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 180.0 </cn>
+								<cn> 40.0 </cn>
+								<cn> 90.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Midnight Green -->
+		<!-- incl. Pine Green -->
+		
+		<csml:Instance csml:ID="RobinEggBlue">
+				<csml:Label>Robin Egg Blue</csml:Label>
+				<csml:Point csml:ID="RobinEggBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 180.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Teal -->
+		
+		<csml:Instance csml:ID="Turquoise">
+				<csml:Label>Turquoise</csml:Label>
+				<csml:Point csml:ID="TurquoiseColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 186.0 </cn>
+								<cn> 53.2 </cn>
+								<cn> 90.6 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Viridian -->
+		
+		<!-- Blue colors -->
+		
+		<csml:Instance csml:ID="AirForceBlue">
+				<csml:Label>Air Force Blue</csml:Label>
+				<csml:Point csml:ID="AirForceBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 210.0 </cn>
+								<cn> 45.0 </cn>
+								<cn> 45.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Alice Blue -->
+		
+		<csml:Instance csml:ID="Azure">
+				<csml:Label>Azure</csml:Label>
+				<csml:Point csml:ID="AzureColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 210.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BluePrototype">
+				<csml:Label>Blue</csml:Label>
+				<csml:Point csml:ID="BluePrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="BrandeisBlue">
+				<csml:Label>Brandeis Blue</csml:Label>
+				<csml:Point csml:ID="BrandeisBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 214.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CarolinaBlue">
+				<csml:Label>Carolina Blue</csml:Label>
+				<csml:Point csml:ID="CarolinaBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 210.9 </cn>
+								<cn> 30.8 </cn>
+								<cn> 86.7 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Cerulean -->
+		
+		<csml:Instance csml:ID="CobaltBlue">
+				<csml:Label>Cobalt Blue</csml:Label>
+				<csml:Point csml:ID="CobaltBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 215.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 67.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="ColumbiaBlue">
+				<csml:Label>Columbia Blue</csml:Label>
+				<csml:Point csml:ID="ColumbiaBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 205.0 </cn>
+								<cn> 47.1 </cn>
+								<cn> 86.7 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="CornflowerBlue">
+				<csml:Label>Cornflower Blue</csml:Label>
+				<csml:Point csml:ID="CornflowerBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 219.0 </cn>
+								<cn> 58.0 </cn>
+								<cn> 93.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Cyan -->
+		
+		<csml:Instance csml:ID="DarkBlue">
+				<csml:Label>Dark Blue</csml:Label>
+				<csml:Point csml:ID="DarkBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 25.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Denim">
+				<csml:Label>Denim</csml:Label>
+				<csml:Point csml:ID="DenimColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 213.0 </cn>
+								<cn> 89.0 </cn>
+								<cn> 74.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DodgerBlue">
+				<csml:Label>Dodger Blue</csml:Label>
+				<csml:Point csml:ID="DodgerBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 210.0 </cn>
+								<cn> 88.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="DukeBlue">
+				<csml:Label>Duke Blue</csml:Label>
+				<csml:Point csml:ID="DukeBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 61.2 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="EgyptianBlue">
+				<csml:Label>Egyptian Blue</csml:Label>
+				<csml:Point csml:ID="EgyptialBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 244.0 </cn>
+								<cn> 77.0 </cn>
+								<cn> 42.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Electric Blue -->
+		
+		<csml:Instance csml:ID="HanBlue">
+				<csml:Label>Han Blue (Han Purple)</csml:Label>
+				<csml:Point csml:ID="HanBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 260.0 </cn>
+								<cn> 97.0 </cn>
+								<cn> 47.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Indigo">
+				<csml:Label>Indigo</csml:Label>
+				<csml:Point csml:ID="IndigoColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 264.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="InternationKleinBlue">
+				<csml:Label>Internation Klein Blue</csml:Label>
+				<csml:Point csml:ID="InternationalKleinBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 223.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 65.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="LightBlue">
+				<csml:Label>Light Blue</csml:Label>
+				<csml:Point csml:ID="LightBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 90.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MajorelleBlue">
+				<csml:Label>Majorelle Blue</csml:Label>
+				<csml:Point csml:ID="MajorelleBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 247.0 </cn>
+								<cn> 67.0 </cn>
+								<cn> 59.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MayaBlue">
+				<csml:Label>Maya Blue</csml:Label>
+				<csml:Point csml:ID="MayaBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 210.0 </cn>
+								<cn> 96.0 </cn>
+								<cn> 87.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="MidnightBlue">
+				<csml:Label>Midnight Blue</csml:Label>
+				<csml:Point csml:ID="MidnightBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 78.0 </cn>
+								<cn> 44.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="NavyBlue">
+				<csml:Label>Navy Blue</csml:Label>
+				<csml:Point csml:ID="NavyBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Periwinkle">
+				<csml:Label>Periwinkle</csml:Label>
+				<csml:Point csml:ID="PeriwinkleColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 20.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PersianBlue">
+				<csml:Label>Persian Blue</csml:Label>
+				<csml:Point csml:ID="PersianBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 249.0 </cn>
+								<cn> 85.0 </cn>
+								<cn> 49.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PowderBlue">
+				<csml:Label>Powder Blue</csml:Label>
+				<csml:Point csml:ID="PowderBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 220.0 </cn>
+								<cn> 70.0 </cn>
+								<cn> 90.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="PrussianBlue">
+				<csml:Label>Prussian Blue</csml:Label>
+				<csml:Point csml:ID="PrissianBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 205.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 43.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="RoyalBlue">
+				<csml:Label>Royal Blue</csml:Label>
+				<csml:Point csml:ID="RoyalBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 219.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 20.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Sapphire">
+				<csml:Label>Sapphire</csml:Label>
+				<csml:Point csml:ID="SapphireColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 222.0 </cn>
+								<cn> 92.2 </cn>
+								<cn> 40.4 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SkyBlue">
+				<csml:Label>Sky Blue</csml:Label>
+				<csml:Point csml:ID="SkyBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 197.0 </cn>
+								<cn> 43.0 </cn>
+								<cn> 92.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="SteelBlue">
+				<csml:Label>Steel Blue</csml:Label>
+				<csml:Point csml:ID="SteelBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 207.0 </cn>
+								<cn> 61.0 </cn>
+								<cn> 71.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Teal -->
+		
+		<csml:Instance csml:ID="Ultramarine">
+				<csml:Label>Ultramarine</csml:Label>
+				<csml:Point csml:ID="UltramarineColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 244.0 </cn>
+								<cn> 93.0 </cn>
+								<cn> 56.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="YaleBlue">
+				<csml:Label>Yale Blue</csml:Label>
+				<csml:Point csml:ID="YaleBlueColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 212.0 </cn>
+								<cn> 89.7 </cn>
+								<cn> 57.3 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Violet colors -->
+		
+		<csml:Instance csml:ID="Amethyst">
+				<csml:Label>Amethyst</csml:Label>
+				<csml:Point csml:ID="AmethystColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 270.0 </cn>
+								<cn> 50.0 </cn>
+								<cn> 80.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Byzantium">
+				<csml:Label>Byzantium</csml:Label>
+				<csml:Point csml:ID="ByzantiumColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 311.0 </cn>
+								<cn> 63.0 </cn>
+								<cn> 44.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Eggplant">
+				<csml:Label>Eggplant</csml:Label>
+				<csml:Point csml:ID="EggplantColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 320.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Fuchsia -->
+		<!-- incl. Han Blue -->
+		
+		<csml:Instance csml:ID="Heliotrope">
+				<csml:Label>Heliotrope</csml:Label>
+				<csml:Point csml:ID="HeliotropeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 286.0 </cn>
+								<cn> 55.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Indigo -->
+		
+		<csml:Instance csml:ID="LavenderFloral">
+				<csml:Label>Lavender (Floral)</csml:Label>
+				<csml:Point csml:ID="LavenderFloralColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 275.0 </cn>
+								<cn> 43.0 </cn>
+								<cn> 86.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Lavender">
+				<csml:Label>Lavender</csml:Label>
+				<csml:Point csml:ID="LavenderColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 240.0 </cn>
+								<cn> 8.0 </cn>
+								<cn> 98.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Lilac">
+				<csml:Label>Lilac</csml:Label>
+				<csml:Point csml:ID="LilacColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 300.0 </cn>
+								<cn> 19.0 </cn>
+								<cn> 78.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Mauve">
+				<csml:Label>Mauve</csml:Label>
+				<csml:Point csml:ID="MauveColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 276.0 </cn>
+								<cn> 31.0 </cn>
+								<cn> 97.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- incl. Periwinkle -->
+		
+		<csml:Instance csml:ID="PersianIndigo">
+				<csml:Label>Persian Indigo</csml:Label>
+				<csml:Point csml:ID="PersianIndigoColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 258.0 </cn>
+								<cn> 85.0 </cn>
+								<cn> 48.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Purple">
+				<csml:Label>Purple</csml:Label>
+				<csml:Point csml:ID="PurpleColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 300.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 50.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Thistle">
+				<csml:Label>Thistle</csml:Label>
+				<csml:Point csml:ID="ThistleColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 300.0 </cn>
+								<cn> 12.0 </cn>
+								<cn> 85.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="VioletPrototype">
+				<csml:Label>Violet</csml:Label>
+				<csml:Point csml:ID="VioletPrototypeColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 270.0 </cn>
+								<cn> 100.0 </cn>
+								<cn> 100.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<csml:Instance csml:ID="Wisteria">
+				<csml:Label>Wisteria</csml:Label>
+				<csml:Point csml:ID="WisteriaColorHSV" csml:domainID="ColorHSV">
+						<csml:PointValues>
+								<cn> 281.0 </cn>
+								<cn> 27.0 </cn>
+								<cn> 86.0 </cn>
+						</csml:PointValues>	
+						<csml:qVector>
+								<ci> ColorHue </ci>
+								<ci> ColorSaturation </ci>
+								<ci> ColorValue </ci>
+						</csml:qVector>
+				</csml:Point>
+		</csml:Instance>
+		
+		<!-- Concepts -->
+
+		<csml:Concept csml:ID="PurpleConcept">
+			<csml:Label>Purple</csml:Label>
+			<csml:Region csml:ID="PurpleConceptColor" csml:domainID="ColorHSV">
+				<csml:AMatrix>
+					<matrixrow>
+						<cn>-1.0</cn>
+						<cn>0.0</cn>
+						<cn>0.2</cn>
+					</matrixrow>
+					<matrixrow>
+						<cn>0.6</cn>
+						<cn>-1.0</cn>
+						<cn>-0.3</cn>
+					</matrixrow>
+					<matrixrow>
+						<cn>0.0</cn>
+						<cn>-1.0</cn>
+						<cn>1.0</cn>
+					</matrixrow>
+				</csml:AMatrix>
+				<csml:bVector>
+					<cn>-0.25</cn>
+					<cn>-0.3</cn>
+					<cn>0.8</cn>
+				</csml:bVector>
+				<csml:qVector>
+					<ci> ColorHue </ci>
+					<ci> ColorSaturation </ci>
+					<ci> ColorValue </ci>
+				</csml:qVector>
+			</csml:Region>
+		</csml:Concept>
+
+</csml:CSML>

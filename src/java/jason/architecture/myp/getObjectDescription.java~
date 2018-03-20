@@ -1,0 +1,123 @@
+// Internal action code for project customBB
+
+package myp;
+
+import edu.geog.geocog.csml.model.CSMLRegion;
+import edu.geog.geocog.csml.model.CSMLQualityDimension;
+import edu.geog.geocog.csml.model.CSMLDomain;
+import edu.geog.geocog.csml.model.CSMLModel;
+import edu.geog.geocog.csml.reasoner.CSMLConceptualSpaceReasoner;
+import edu.geog.geocog.csml.model.CSMLPoint;
+import edu.geog.geocog.csml.model.CSMLInstance;
+
+import jason.*;
+import jason.asSemantics.*;
+import jason.asSyntax.*;
+import jason.bb.*;
+
+import jason.stdlib.*;
+
+import java.util.*;
+import java.util.TreeMap;
+
+public class getObjectDescription extends DefaultInternalAction {
+
+    @Override
+    public Object execute(TransitionSystem ts, Unifier un, Term[] args) throws Exception {
+        // execute the internal action
+    	try {	
+    		// 1. gets the arguments as typed terms
+    	StringTerm p1x = (StringTerm)args[0];
+		String s = p1x.getString();
+		
+		TreeMap <String,String> tm_concepts = new TreeMap();
+		  
+		tm_concepts.put("QuadroPri","Quadro de Flores da Pri");
+        tm_concepts.put("ArCond","Ar Condicionado: Cor Bege");
+		tm_concepts.put("apaceWindow1","Ar Condicionado: Cor Bege");
+		tm_concepts.put("apaceBlackChair1","Cadeira: Cor Preta");
+		tm_concepts.put("apaceBlackChair2","Cadeira: Cor Preta");
+		tm_concepts.put("apaceBlackChair3","Cadeira: Cor Preta");
+		tm_concepts.put("apaceBlackChair4","Cadeira: Cor Preta");
+		tm_concepts.put("apaceTable1","Mesa: Cor Bege");
+		tm_concepts.put("apaceBlueBox1","Perciana: Cor Bege");
+		tm_concepts.put("apacePerciana1","Perciana: Cor Bege");
+		tm_concepts.put("apacePerciana2","Perciana: Cor Bege");
+		tm_concepts.put("apacePerciana3","Perciana: Cor Bege");
+		tm_concepts.put("apaceNoteBook1","Notebook: Cor prata");
+		tm_concepts.put("apaceNoteBook2","Notebook: Cor prata");
+		tm_concepts.put("CadeiraPreta1","Cadeira: Cor preta");
+		tm_concepts.put("CadeiraPreta2","Cadeira: Cor preta");
+		tm_concepts.put("CadeiraPreta3","Cadeira: Cor preta");
+		tm_concepts.put("Mochila1","Mochila: Cor preta");
+		tm_concepts.put("Mochila2","Mochila: Cor preta");
+		tm_concepts.put("Mochila3","Mochila: Cor preta");
+		tm_concepts.put("Notebook1","Notebook: Cor prata");
+		tm_concepts.put("Notebook2","Notebook: Cor prata");
+		tm_concepts.put("Notebook3","Notebook: Cor prata");
+		
+		tm_concepts.put("qpri","Quadro Pri: Quadro de Flores da Pri");
+		tm_concepts.put("janela3","Janela: Cor purpura");
+		tm_concepts.put("cadeiras31","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras32","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras33","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras35","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras36","Cadeiras: Cor preta");
+		tm_concepts.put("caixa3","Caixas de som: Cor azul");
+		tm_concepts.put("computador3","Notebook: Cor prata");
+		tm_concepts.put("mesa31","Mesa notebook: Cor bege");
+		tm_concepts.put("mesa32","Mesa notebook: Cor bege");
+		tm_concepts.put("mesa33","Mesa notebook: Cor bege");
+		tm_concepts.put("perciana3","Perciana: Cor Bege");
+		tm_concepts.put("porta3","Porta cor branca");
+		tm_concepts.put("quadrobranco3","Quadro cor branca");
+		//
+		tm_concepts.put("janela7","Janela: Cor purpura");
+		tm_concepts.put("cadeiras71","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras72","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras74","Cadeiras: Cor preta");
+		tm_concepts.put("cadeiras75","Cadeiras: Cor preta");
+		tm_concepts.put("caixa7","Caixas de som: Cor azul");
+		tm_concepts.put("computador7","Notebook: Cor prata");
+		tm_concepts.put("mesa71","Mesa notebook: Cor bege");
+		tm_concepts.put("mesa72","Mesa notebook: Cor bege");
+		tm_concepts.put("quadrobranco7","Quadro cor branca");
+		
+		
+		
+      //  tm_concepts.put("MonitorLed","TV de LED: Cor Preta");
+        //tm_concepts.put("PortaGabinete1","Porta Gabinete: Cor Azul");
+		//tm_concepts.put("PortaGabinete2","Porta Gabinete: Cor Azul");
+		//tm_concepts.put("ChaveGabinete1","Ghave Gabinete: Cor verde");
+		//tm_concepts.put("ChaveGabinete2","Ghave Gabinete: Cor verde");
+		
+		//tm_concepts.put("QuadroPequeno","Quadro Pequeno");
+		//tm_concepts.put("Mesa1","Mesa Redonda: Cor Bege");
+		//tm_concepts.put("Mesa2","Mesa Redonda: Cor Bege");
+		//tm_concepts.put("Mesa3","Mesa Redonda: Cor Bege");
+		//tm_concepts.put("noteChair1","Cadeira: Cor Preta");
+		//tm_concepts.put("warDrobe1","Armario Cor Preta");
+		//tm_concepts.put("warDrobe2","Armario Cor Preta");
+		//tm_concepts.put("warDrobe3","Armario Cor Preta");
+		
+		tm_concepts.put("NV","Objeto não identificado ...");
+		
+		tm_concepts.put("NF","NF");
+		
+		String obj_concept2 = tm_concepts.get(s);
+			
+		StringTerm result2 =  new StringTermImpl(obj_concept2);
+		
+    		return un.unifies(result2,args[1]);
+    		} catch (ArrayIndexOutOfBoundsException e) {
+    		throw new JasonException("The internal action conceito"+
+    		"has not received five arguments!");
+    		} catch (ClassCastException e) {
+    		throw new JasonException("The internal action conceito"+
+    		"has received arguments that are not numbers!");
+    		} catch (Exception e) {
+    		throw new JasonException("Error in conceito");
+    		}
+    	 	
+    }
+}

@@ -1,0 +1,192 @@
+package agent;
+
+import edu.geog.geocog.csml.model.CSMLRegion;
+import edu.geog.geocog.csml.model.CSMLQualityDimension;
+import edu.geog.geocog.csml.model.CSMLDomain;
+import edu.geog.geocog.csml.model.CSMLModel;
+import edu.geog.geocog.csml.reasoner.CSMLConceptualSpaceReasoner;
+import edu.geog.geocog.csml.model.CSMLPoint;
+import edu.geog.geocog.csml.model.CSMLInstance;
+import jason.JasonException;
+import jason.asSemantics.*
+;
+import jason.asSyntax.*;
+import jason.bb.*;
+import jason.stdlib.*;
+
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class TimeBB extends DefaultBeliefBase {
+	
+	//private long start;
+	private static Logger logger = Logger.getLogger(DefaultBeliefBase.class.getSimpleName());
+	double sim=4.0;
+	double threshold = 2.0;
+	int flag=0;	
+	Literal l1;
+	
+	@Override
+	public void init(Agent ag, String[] args) {
+	 // start = System.currentTimeMillis();
+	  super.init(ag,args);
+	  }
+	
+	@Override
+	 public boolean add(Literal l) {
+		
+		CSMLModel m = new CSMLModel();
+
+		
+		if (l.getFunctor().equals("haspropriety")){
+			logger.warning("Building CSML model:...:");	
+			
+			CSMLDomain d1 = m.createCSMLDomain("d1");
+			CSMLQualityDimension qd1 = m.createCSMLQualityDimension("ColorHue");                          
+	        qd1.setLabel("Hue");
+	        qd1.setCircular(true);
+	        qd1.setScale("interval");
+	        qd1.setRange(0.0, 360.0);
+	        qd1.setDescription("My Color Hue");
+	        qd1.setUnits("degrees");
+	        d1.addQualityDimension(qd1);
+			CSMLQualityDimension qd2 = m.createCSMLQualityDimension("ColorSaturation");
+	        qd2.setLabel("Saturation");
+	        qd2.setScale("ratio");
+	        qd2.setRange(0.0, 100.0);
+	        qd2.setDescription("My Color Saturation");
+	        qd2.setUnits("percent");
+	        d1.addQualityDimension(qd2);
+	        CSMLQualityDimension qd3 =  m.createCSMLQualityDimension("ColorValue");
+	        qd3.setLabel("Value");
+	        qd3.setScale("ratio");
+	        qd3.setRange(0.0, 100.0);
+	        qd3.setDescription("My Color Value");
+	        qd3.setUnits("percent");
+	        d1.addQualityDimension(qd3);
+			m.addDomain(d1);
+			
+			CSMLPoint p1 = m.createCSMLPoint("p1", d1);
+			p1.setq(d1.getQualityDimensionIds());
+			double[] pv1 = {57, 18,100};
+			p1.setv(pv1);
+
+			
+			  Iterator<Literal> ip = getPercepts();
+			  while (ip.hasNext()) {
+				 Literal bel = ip.next();
+				 if (bel.getFunctor().equals("haspropriety")){
+				    if (bel.getTerm(0).equals(l.getTerm(0))){			    			    	
+				    	if (l.getTerm(1).toString().equals("color")){
+				    		logger.warning("Building CSML model: Getting color propriety...:");				    		
+				    		String string = l.getTerm(2).toString();
+				    		String[] parts = string.split(",");
+				    		String teste =  parts[0].replace("[", ""); 
+				    		String teste1 =  parts[2].replace("]", ""); 
+				    		Double vl1 = Double.parseDouble(teste);
+				    		Double vl2 = Double.parseDouble(parts[1]);
+				    		Double vl3 = Double.parseDouble(teste1);
+				    		
+				    		CSMLPoint p2 = m.createCSMLPoint("p2", d1);
+							p2.setq(d1.getQualityDimensionIds());		 
+				    		double[] pv2 = {vl1, vl2,vl3};
+				    		p2.setv(pv2);				    							
+					      }	
+				    	
+					     if (l.getTerm(1).toString().equals("size")){
+						     logger.warning("Building CSML model: Getting shape propriety...:");
+						     sim = sim-1;
+						     /*CSMLDomain d2 = new CSMLDomain("d2",m);
+						     CSMLQualityDimension qd2 = new CSMLQualityDimension("height",m);
+				             qd2.setLabel("height");
+				             qd2.setScale("interval");
+				             qd2.setRange(0.0, 100.0);
+				             qd2.setDescription("My height");
+				             qd2.setUnits("degrees");
+				             d2.addQualityDimension(qd2);
+				             m.addDomain(d2);*/
+						
+					      }
+					  
+				    }
+			     }
+		  }
+			
+				 	
+          	CSMLConceptualSpaceReasoner reasoner = new CSMLConceptualSpaceReasoner(m);
+             sim = sim - reasoner.distance(p1, p2, null);
+			
+			if (sim< 4.0){
+	          logger.warning("Similarity:"+sim);
+			 }
+				
+			if (sim<threshold){
+				
+				Iterator<Literal> ipp = getPercepts();
+				while (ipp.hasNext()) {
+					Literal bell = ipp.next();
+					if (bell.getFunctor().equals("haspropriety")){
+						if (bell.getTerm(0).equals(l.getTerm(0))){
+							logger.warning("Removing...:"+bell.getTerm(1));
+							ipp.remove();
+							
+						}
+					}
+					
+				}	
+				
+			 l1 = Literal.parseLiteral("object(apple1,apple)[source(percept),csmldb(mycsmldb),csmlins(apple1),was(object1)]");
+			flag=1;
+			
+			}
+			
+		//	logger.warning("Propriedade ...:"+l1.getFunctor());
+			
+				 
+			  /* if(a2.contains(temp)) 
+			   {
+			      a3.add(1);
+			   }*/
+			
+		}
+		
+		logger.warning(m.toCSML());	
+	//if (! hasTimeAnnot(bel)) {
+	//Structure time = new Structure("add_time");
+	//long pass = System.currentTimeMillis() - start;
+	//time.addTerm(new NumberTermImpl(pass));
+	//l1.addTerm(time);
+	//logger.warning("Propriedade ...:"+l1.getFunctor());
+	//l.addAnnot(time);
+	
+	
+	  /*Structure teste = new Structure(l.getFunctor().toString());
+	  teste.addTerm(l.getTerm(0));		
+		Literal t = (Literal) l.getTerm(0);
+		String s = l.getFunctor()+"="+l.getTerm(0);
+	    t.addAnnot(teste);*/
+	//}
+		
+	if (flag==0){
+		return super.add(l);
+		
+	}else{
+	
+	return super.add(l1);
+	}
+	
+	}
+		
+
+	private boolean hasTimeAnnot(Literal bel) {
+		Literal belInBB = contains(bel);
+		if (belInBB != null)
+		for (Term a : belInBB.getAnnots())
+		if (a.isStructure())
+		if (((Structure)a). getFunctor().equals("add_time"))
+		return true;
+		return false;
+		}
+	
+}

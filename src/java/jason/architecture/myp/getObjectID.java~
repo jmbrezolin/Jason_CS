@@ -1,0 +1,101 @@
+// Internal action code for project customBB
+
+package myp;
+
+import edu.geog.geocog.csml.model.CSMLRegion;
+import edu.geog.geocog.csml.model.CSMLQualityDimension;
+import edu.geog.geocog.csml.model.CSMLDomain;
+import edu.geog.geocog.csml.model.CSMLModel;
+import edu.geog.geocog.csml.reasoner.CSMLConceptualSpaceReasoner;
+import edu.geog.geocog.csml.model.CSMLPoint;
+import edu.geog.geocog.csml.model.CSMLInstance;
+
+import jason.*;
+import jason.asSemantics.*;
+import jason.asSyntax.*;
+import jason.bb.*;
+
+import jason.stdlib.*;
+
+import java.util.*;
+import java.util.logging.Logger;
+
+public class getObjectID extends DefaultInternalAction {
+
+    @Override
+    public Object execute(TransitionSystem ts, Unifier un, Term[] args) throws Exception {
+        // execute the internal action
+		Logger logger = Logger.getLogger(DefaultInternalAction.class.getSimpleName());
+    	try {
+    		int i=0, flag=0;
+			StringTerm result =  new StringTermImpl();
+    		// 1. gets the arguments as typed terms
+    		StringTerm p1x = (StringTerm)args[0];
+			String s = p1x.getString();
+			String[] parts = s.split(",");
+			String obj_center = parts[0]+"_center";
+			String obj_id=""; 	
+			int tam = parts[0].length();
+			
+			double value = Double.parseDouble(parts[2]);
+			NumberTerm p2x = new NumberTermImpl(value);
+			double value2 = Double.parseDouble(parts[3]);
+			NumberTerm p2y  = new NumberTermImpl(value2);
+			logger.warning("tamanho:"+tam);
+			
+			
+			
+			for (Literal b: ts.getAg().getBB()) {
+				 
+				if (b.getFunctor().equals("object_center")){
+				   logger.warning("Mensagem:...:"+b.getFunctor()+" "+parts[2]+" "+parts[3]); 	
+				   logger.warning("BB:...:"+b.getFunctor()+" "+b.getTerm(1)+" "+b.getTerm(2)); 
+				   StringTerm sub = (StringTerm) b.getTerm(0);
+				   String sub1 = sub.getString();
+				   String sub2 = sub1.substring(0,tam);
+				   logger.warning("sub:"+sub2);
+				   NumberTerm p3x = (NumberTerm)b.getTerm(1);
+    		       NumberTerm p3y = (NumberTerm)b.getTerm(2); 
+					logger.warning("Mensagem:...:"+p2x+" "+p3x); 
+					logger.warning("Mensagem:...:"+p2y+" "+p3y);
+					double r = Math.abs(p2x.solve()-p3x.solve()) +
+    		                   Math.abs(p2y.solve()-p3y.solve());
+					if ((r==0.0) && (sub2.equals(parts[0])))             
+				    {
+						logger.warning("Entrei"); 
+					  result = (StringTerm)(b.getTerm(0));
+					  flag=1;
+			        } 
+				} 
+             }
+			 logger.warning("Teste:...:"+flag);
+			 
+			 if (flag==1){
+			      obj_id = result.getString();		 
+			 }else{
+				 logger.warning("Entrei aqui");
+			 
+			 for (Literal bel: ts.getAg().getBB()) {
+				 if (bel.getFunctor().equals(parts[0])){
+				   logger.warning("Entrei aqui tambem");	 
+				   i++;
+				 }
+			     obj_id = parts[0]+Integer.toString(i);
+			 
+			 
+			 }
+			}
+			StringTerm result2 =  new StringTermImpl(obj_id);
+    		return un.unifies(result2,args[1]);
+    		} catch (ArrayIndexOutOfBoundsException e) {
+    		throw new JasonException("The internal action distance"+
+    		"has not received five arguments!");
+    		} catch (ClassCastException e) {
+    		throw new JasonException("The internal action distance"+
+    		"has received arguments that are not numbers!");
+    		} catch (Exception e) {
+    		throw new JasonException("Error in distance");
+    		}
+    	 	
+    }
+}

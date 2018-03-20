@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<csml:CSML csml:base="http://geocog.geog.ucsb.edu/csml/repository/surfspot.csml#"
+xml:base="http://geocog.geog.ucsb.edu/csml/repository/surfspot.csml"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:csml="http://geocog.geog.ucsb.edu/csml/csml-ns#">
+
+<csml:Domain csml:ID="Wave">
+	<csml:QualityDimension csml:ID="WaveHeight">
+		<csml:Scale>ratio</csml:Scale>
+		<csml:Units>feet</csml:Units>
+	</csml:QualityDimension>
+	<csml:QualityDimension csml:ID="WaveFrequency">
+		<csml:Scale>interval</csml:Scale>
+		<csml:Units>seconds</csml:Units>
+	</csml:QualityDimension>
+</csml:Domain>
+
+<csml:Domain csml:ID="Wind">
+	<csml:QualityDimension csml:ID="WindOnshore">
+		<csml:Scale>interval</csml:Scale>
+		<csml:Units>mph</csml:Units>
+	</csml:QualityDimension>
+	<csml:QualityDimension csml:ID="WindOffshore">
+		<csml:Scale>interval</csml:Scale>
+		<csml:Units>mph</csml:Units>
+	</csml:QualityDimension>
+	<csml:QualityDimension csml:ID="WindSideshore">
+		<csml:Scale>interval</csml:Scale>
+		<csml:Units>mph</csml:Units>
+	</csml:QualityDimension>
+</csml:Domain>
+
+<csml:Domain csml:ID="Coordinates">
+	<csml:QualityDimension csml:ID="Latitude">
+		<csml:Scale>interval</csml:Scale>
+		<csml:Range>
+			<csml:Min>-90.0</csml:Min>
+			<csml:Max>90.0</csml:Max>
+		</csml:Range>
+		<csml:Units>degrees</csml:Units>
+	</csml:QualityDimension>
+	<csml:QualityDimension csml:ID="Longitude" csml:circular="true">
+		<csml:Scale>interval</csml:Scale>
+		<csml:Range>
+			<csml:Min>-180.0</csml:Min>
+			<csml:Max>180.0</csml:Max>
+		</csml:Range>
+		<csml:Units>degrees</csml:Units>
+	</csml:QualityDimension>
+</csml:Domain>
+
+<csml:Domain csml:ID="SpotStatics">
+	<csml:QualityDimension csml:ID="WECrowd">
+		<csml:Scale>ordinal</csml:Scale>
+		<csml:Units>Crowdsize</csml:Units>
+	</csml:QualityDimension>
+	<csml:QualityDimension csml:ID="WDCrowd">
+		<csml:Scale>ordinal</csml:Scale>
+		<csml:Units>Crowdsize</csml:Units>
+	</csml:QualityDimension>
+</csml:Domain>
+
+<csml:Instance csml:ID="CampusPoint">
+	<csml:Point csml:ID="CampusPointCoordinates" csml:domainID="Coordinates">
+		<csml:PointValues>
+			<cn>34.404767</cn>
+			<cn>-119.842086</cn>
+		</csml:PointValues>
+	  <csml:qVector>
+		  <ci>Latitude</ci>
+		  <ci>Longitude</ci>
+	  </csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="CampusPointWind" csml:domainID="Wind">
+		<csml:PointValues>
+			<cn>17</cn>
+			<cn>0</cn>
+			<cn>0</cn>
+		</csml:PointValues>
+	  <csml:qVector>
+		  <ci>WindOnshore</ci>
+		  <ci>WindOffshore</ci>
+		  <ci>WindSideshore</ci>
+	  </csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="CampusPointWave" csml:domainID="Wave">
+		<csml:PointValues>
+			<cn>3.5</cn>
+			<cn>9</cn>
+		</csml:PointValues>
+	  <csml:qVector>
+	  	<ci>WaveHeight</ci>
+		  <ci>WaveFrequency</ci>
+	  </csml:qVector>
+	</csml:Point>
+</csml:Instance>
+
+<csml:Instance csml:ID="Rincon">
+	<csml:Point csml:ID="RinconCoordinates" csml:domainID="Coordinates">
+		<csml:PointValues>
+			<cn>34.373222</cn>
+			<cn>-119.476082</cn>
+		</csml:PointValues>
+	<csml:qVector>
+		<ci>Latitude</ci>
+		<ci>Longitude</ci>
+	</csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="RinconWind" csml:domainID="Wind">
+		<csml:PointValues>
+			<cn>0</cn>
+			<cn>12</cn>
+			<cn>0</cn>
+		</csml:PointValues>
+	<csml:qVector>
+		<ci>WindOnshore</ci>
+		<ci>WindOffshore</ci>
+		<ci>WindSideshore</ci>
+	</csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="RinconWave" csml:domainID="Wave">
+		<csml:PointValues>
+			<cn>2</cn>
+			<cn>9</cn>
+		</csml:PointValues>
+	<csml:qVector>
+		<ci>WaveHeight</ci>
+		<ci>WaveFrequency</ci>
+	</csml:qVector>
+	</csml:Point>
+</csml:Instance>
+
+<csml:Instance csml:ID="Refugio">
+	<csml:Point csml:ID="RefugioCoordinates" csml:domainID="Coordinates">
+		<csml:PointValues>
+			<cn>34.2764638</cn>
+			<cn>-120.438917</cn>
+		</csml:PointValues>
+	<csml:qVector>
+		<ci>Latitude</ci>
+		<ci>Longitude</ci>
+	</csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="RefugioWind" csml:domainID="Wind">
+		<csml:PointValues>
+			<cn>0</cn>
+			<cn>0</cn>
+			<cn>17</cn>
+		</csml:PointValues>
+	<csml:qVector>
+		<ci>WindOnshore</ci>
+		<ci>WindOffshore</ci>
+		<ci>WindSideshore</ci>
+	</csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="RefugioWave" csml:domainID="Wave">
+		<csml:PointValues>
+			<cn>6</cn>
+			<cn>8</cn>
+		</csml:PointValues>
+	<csml:qVector>
+		<ci>WaveHeight</ci>
+		<ci>WaveFrequency</ci>
+	</csml:qVector>
+	</csml:Point>
+</csml:Instance>
+
+
+<csml:Instance csml:ID="User">
+	<csml:Point csml:ID="UserCoordinates" csml:domainID="Coordinates">
+		<csml:PointValues>
+			<cn>34.412929</cn>
+			<cn>-119.848115</cn>
+		</csml:PointValues>
+	  <csml:qVector>
+		  <ci>Latitude</ci>
+		  <ci>Longitude</ci>
+	  </csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="UserWind" csml:domainID="Wind">
+		<csml:PointValues>
+			<cn>15</cn>
+			<cn>30</cn>
+			<cn>20</cn>
+		</csml:PointValues>
+	  <csml:qVector>
+		  <ci>WindOnshore</ci>
+		  <ci>WindOffshore</ci>
+		  <ci>WindSideshore</ci>
+	  </csml:qVector>
+	</csml:Point>
+	<csml:Point csml:ID="UserWave" csml:domainID="Wave">
+		<csml:PointValues>
+			<cn>5</cn>
+			<cn>12</cn>
+		</csml:PointValues>
+	  <csml:qVector>
+	  	<ci>WaveHeight</ci>
+	  	<ci>WaveFrequency</ci>
+	  </csml:qVector>
+	</csml:Point>
+</csml:Instance>
+
+<csml:Context csml:ID="WaveCoordWindWeights" csml:type="domain">
+	<csml:Weight csml:cID="Wave">
+		0.55
+	</csml:Weight>
+	<csml:Weight csml:cID="Wind">
+		0.15
+	</csml:Weight>
+	<csml:Weight csml:cID="Coordinates">
+		0.3
+	</csml:Weight>
+</csml:Context>
+
+<csml:Context csml:ID="WaveDimWeights" csml:type="qdim" csml:domainID="Wave">
+		<csml:Weight csml:cID="WaveHeight">
+		0.55
+		</csml:Weight>
+		<csml:Weight csml:cID="WaveFrequency">
+		0.45
+		</csml:Weight>
+</csml:Context>
+
+<csml:Context csml:ID="WindDimWeights" csml:type="qdim" csml:domainID="Wind">
+		<csml:Weight csml:cID="WindOnshore">
+		0.33
+		</csml:Weight>
+		<csml:Weight csml:cID="WindSideshore">
+		0.33
+		</csml:Weight>
+		<csml:Weight csml:cID="WindOffshore">
+		0.33
+		</csml:Weight>
+</csml:Context>
+
+<csml:Context csml:ID="CoordDimWeights" csml:type="qdim" csml:domainID="Coordinates">
+		<csml:Weight csml:cID="Latitude">
+		0.5
+		</csml:Weight>
+		<csml:Weight csml:cID="Longitude">
+		0.5
+		</csml:Weight>
+</csml:Context>
+
+</csml:CSML>
